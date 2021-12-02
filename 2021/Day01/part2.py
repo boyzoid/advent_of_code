@@ -3,6 +3,7 @@ import array
 
 f = open( 'data.json' )
 data = json.load( f )
+f.close()
 
 myCount = 0
 if len( data ) > 2:
@@ -20,4 +21,3 @@ while i < len( data ) - 2:
 
 print( myCount )
 
-f.close()

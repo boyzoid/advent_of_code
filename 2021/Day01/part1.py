@@ -1,6 +1,7 @@
 import json
 f = open( 'data.json' )
 data = json.load( f )
+f.close()
 
 myCount = 0
 prevDepth = data[ 0 ]
@@ -11,4 +12,3 @@ for depth in data:
 
 print( myCount )
 
-f.close()
